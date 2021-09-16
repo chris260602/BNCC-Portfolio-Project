@@ -1,0 +1,219 @@
+main {
+  max-width: 1300px;
+  margin: 100px auto;
+}
+
+main .main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contact-text contact-img"
+    "contact-container contact-container";
+}
+
+main .main-container .contact-text {
+  padding: 50px;
+  grid-area: contact-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .main-container .contact-text h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+main .main-container .contact-text p {
+  line-height: 40px;
+  font-size: 1.5rem;
+}
+
+main .main-container .contact-text a {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+main .main-container .contact-text a:hover {
+  color: #50b6d3;
+}
+
+main .main-container .contact-img {
+  grid-area: contact-img;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-container .contact-img img {
+  width: 100%;
+  max-width: 700px;
+}
+
+main .main-container .contact-container {
+  margin-top: 200px;
+
+  grid-area: contact-container;
+}
+
+main .main-container .contact-container > h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main .main-container .contact-container .contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+main .main-container .contact-container .contact-form .contact-form-img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  margin: 0 50px;
+}
+
+main .main-container .contact-container .contact-form .contact-form-img > img {
+  transition: 300ms;
+  z-index: -1;
+  width: 90%;
+}
+
+main
+  .main-container
+  .contact-container
+  .contact-form
+  .contact-form-img:hover
+  > img {
+  transform: rotateZ(-30deg);
+}
+
+main .main-container .contact-container .contact-form form {
+  width: 50%;
+  margin: 20px;
+  margin-right: 50px;
+  padding: 30px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 30px 1px black;
+  border-radius: 20px;
+}
+
+main .main-container .contact-container .contact-form form .form-items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+main .main-container .contact-container .contact-form form .form-items label {
+  font-size: 1.5rem;
+  width: 200px;
+}
+
+main .main-container .contact-container .contact-form form .form-items input {
+  font-size: 1.3em;
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+main
+  .main-container
+  .contact-container
+  .contact-form
+  form
+  .form-items
+  textarea {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+main
+  .main-container
+  .contact-container
+  .contact-form
+  form
+  .form-items
+  input:focus,
+main
+  .main-container
+  .contact-container
+  .contact-form
+  form
+  .form-items
+  textarea:focus {
+  outline: none;
+}
+
+main .main-container .contact-container .contact-form form #tos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .main-container .contact-container .contact-form form #tos input {
+  width: 20px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+main .main-container .contact-container .contact-form form #tos label {
+  width: 100%;
+}
+
+main .main-container .contact-container .contact-form form button {
+  border-radius: 10px;
+  background-color: #61dafb;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
+main .main-container .contact-container .contact-form form button:hover {
+  background-color: #50b6d3;
+}
+
+main .main-container .contact-container .contact-form form .warning {
+  color: red;
+}
+
+@media screen and (max-width: 970px) {
+  main .main-container {
+    grid-template-areas:
+      "contact-text"
+      "contact-img"
+      "contact-container";
+    grid-template-columns: 1fr;
+  }
+  main .main-container .contact-container .contact-form .contact-form-img {
+    display: none;
+  }
+  main .main-container .contact-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main .main-container .contact-container .contact-form form .form-items label,
+  main .main-container .contact-container .contact-form form .form-items p,
+  main .main-container .contact-container .contact-form form .form-items input,
+  main
+    .main-container
+    .contact-container
+    .contact-form
+    form
+    .form-items
+    textarea {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    font-size: calc(4vw - 5px);
+  }
+}

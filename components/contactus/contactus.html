@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/contactus.css" />
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>Christoper Lim | Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-top">
+          <div class="header-top-container">
+            <div class="header-main-title">
+              <h1 class="awalAnimasi">Christoper Lim</h1>
+            </div>
+            <div class="header-sub-title">
+              <h3 class="awalAnimasi">Welcome to My Portfolio</h3>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav id="nav">
+        <div class="header-nav">
+          <div class="header-nav-container">
+            <div class="nav-logo">
+              <a href="#"><img src="../../assets/img/logo.png" alt="logo" /></a>
+            </div>
+            <div class="nav-list">
+              <ul>
+                <li>
+                  <a href="../../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="../portfolio/portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" class="active">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-button">
+              <i class="fas fa-bars fa-3x"></i>
+              <i class="fas fa-times fa-3x" style="display: none"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="main-container">
+          <div class="contact-text awalAnimasi2" >
+            <h2>Open for Collaboration</h2>
+            <p>Do you need a person to work together as a team ?</p>
+            <p>Feel free to contact me by filling your data</p>
+            <p>I will try to reply back as fast as i can</p>
+            <a href="#contact-link">Contact Now</a>
+          </div>
+          <div class="contact-img awalAnimasi3" >
+            <img src="../../assets/img/collab.jpg" alt="collab">
+          </div>
+          <div class="contact-container" id="contact-link">
+            <h1>How to Contact Us</h1>
+            <div class="contact-form">
+              <div class="contact-form-img">
+                <img src="../../assets/img/contact-book.png" alt="contact">
+              </div>
+              <form >
+                <div class="form-items">
+                  <label for="name">Name</label>
+                  <p id="label-name" class="warning"></p>
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-items">
+                  <label for="email">Email</label>
+                  <p id="label-email" class="warning"></p>
+                  <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-items">
+                  <label for="telnum">Mobile Number</label>
+                  <p id="label-number" class="warning"></p>
+                  <input type="tel" name="telnum" id="telnum" placeholder="08...." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="form-items">
+                  <label for="message">Comment</label>
+                  <p id="label-message" class="warning"></p>
+                  <textarea name="message" id="message" cols="10" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button>Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="website-rights">
+            <h3>Christoper Lim © 2021</h3>
+          </div>
+          <div class="footer-socials">
+            <a
+              href="https://www.instagram.com/christoperlim02/"
+              target="_blank"
+              class="ig"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a
+              href="https://github.com/chris260602"
+              target="_blank"
+              class="github"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/christoper-lim-5459b0164/"
+              target="_blank"
+              class="linkedin"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c5c4426486.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+     integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/database.js"></script>
+  </body>
+</html>

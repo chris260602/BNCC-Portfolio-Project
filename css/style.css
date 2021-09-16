@@ -1,0 +1,131 @@
+main .main-container {
+  max-width: 1300px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .main-text {
+  font-size: 1.8rem;
+  padding: 50px;
+  width: 50%;
+}
+
+main .main-text #main-smaller {
+  font-size: 2rem;
+}
+
+main .main-text #dropdownme {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+main .main-text #dropdownme:hover {
+  color: #4fb4cf;
+}
+
+main .main-text p {
+  font-size: 1.5rem;
+}
+
+main .main-img {
+  width: 50%;
+  margin-right: 20px;
+}
+
+main .main-img img {
+  max-width: 100%;
+}
+
+main #aboutme-container {
+  display: flex;
+  max-width: 1300px;
+  margin: 100px auto;
+}
+
+main #aboutme-container .about-text {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main #aboutme-container .about-text h2 {
+  font-size: 3rem;
+}
+
+main #aboutme-container .about-text p {
+  font-size: 1.8rem;
+}
+
+main #aboutme-container .about-text a {
+  font-size: 1.5rem;
+  color: #61dafb;
+  text-decoration: none;
+}
+
+main #aboutme-container .about-text a:hover {
+  color: #4fb4cf;
+}
+
+main #aboutme-container .about-img {
+  width: 50%;
+  padding: 50px;
+}
+
+main #aboutme-container .about-img img {
+  width: 100%;
+  box-shadow: 10px 5px 20px 1px black;
+  transition: all 1s;
+}
+
+main #aboutme-container .about-img img:hover {
+  transform: matrix(1, 0, 0, 1, -15, 10);
+  box-shadow: 20px 5px 50px 10px black;
+}
+
+@media screen and (max-width: 950px) {
+  main .main-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  main .main-container .main-text {
+    text-align: center;
+    width: 100%;
+  }
+  main .main-container .main-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main-container .main-img img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main #aboutme-container {
+    flex-direction: column;
+  }
+  main #aboutme-container .about-text {
+    text-align: center;
+    width: 100%;
+  }
+  main #aboutme-container .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main #aboutme-container .about-img img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    font-size: calc(4vw - 5px);
+  }
+}

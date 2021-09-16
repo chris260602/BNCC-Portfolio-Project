@@ -1,0 +1,39 @@
+footer {
+  background-color: black;
+  color: wheat;
+}
+
+footer .footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .website-rights {
+  margin-left: 20px;
+}
+
+footer .footer-socials {
+  margin-right: 20px;
+}
+
+footer .footer-socials a {
+  color: white;
+  margin: 10px;
+  transition: all 200ms;
+}
+
+footer .footer-socials .ig:hover {
+  color: #ff5c64;
+}
+
+footer .footer-socials .github:hover {
+  color: #c74eff;
+}
+
+footer .footer-socials .linkedin:hover {
+  color: #076aff;
+}
